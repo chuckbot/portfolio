@@ -1,7 +1,7 @@
 module.exports = {
     author: "Carlos Garcia",
     siteTitle: "Carlos Garcia - Portfolio",
-    siteShortTitle: "DN",
+    siteShortTitle: "CG",
     siteDescription: "Personal portfolio. Carlos He is a software engineer who specializes in Frontend and Serverless development",
     siteLanguage: "en_UK",
     socialMedia: [

@@ -11,8 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.18",
+    "@mdx-js/react": "^1.6.18",
     "gatsby": "^2.24.73",
+    "gatsby-plugin-mdx": "^1.2.46",
     "gatsby-plugin-postcss": "^3.0.1",
+    "gatsby-source-filesystem": "^2.3.34",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
