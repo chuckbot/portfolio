@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { navLinks } from "../config/index"
+import React from "react";
+import { Link } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import { navLinks } from "../config/index";
 
 const Hero = ({ content }) => {
     const { frontmatter, body } = content[0].node
@@ -26,7 +26,7 @@ const Hero = ({ content }) => {
                 </section>
             </div>
         </div>
-    )
+    );
 }
 
 export default Hero;

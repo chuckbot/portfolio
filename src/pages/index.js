@@ -1,8 +1,10 @@
 import React from 'react';
+import { graphql } from "gatsby";
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Project from '../components/Project';
+import Contact from '../components/Contact';
 
 export default ({ data }) => {
     return (
@@ -10,6 +12,7 @@ export default ({ data }) => {
             <Hero content={data.hero.edges} />
             <About content={data.about.edges} />
             <Project content={data.project.edges} />
+            <Contact content={data.contact.edges} />
         </Layout>
     );
 };
@@ -74,5 +77,17 @@ export const pageQuery = graphql`
                 }
             }
         }
+        contact: allMdx(filter: {fileAbsolutePath: {regex: "/contact/"}}) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        callToAction
+                    }
+                    body
+                }
+            }
+        }
+
     }
 `
