@@ -28,9 +28,6 @@ const Project = ({ content }) => {
                                         })}
                                     </div>
                                     <div className="flex mt-4">
-                                        <a href={frontmatter.github} className="w-8 h-8 mr-4">
-                                            <Icon name="github" />
-                                        </a>
                                         <a href={frontmatter.external} className="w-8 h-8">
                                             <Icon name="external" />
                                         </a>
